@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/steve.tuckner/.rvm/gems/ruby-2.0.0-p0@edge-mobile-gateway/gems/actionpack-3.2.12'
+let g:netrw_dirhist_2='/Users/steve.tuckner/Projects/Edge/rpp_web_app/lib'
+let g:netrw_dirhist_3='/Users/steve.tuckner/.rvm/gems/ruby-1.9.3-p125@rpp_web_app/gems/validates_existence-0.8.0'
+let g:netrw_dirhist_4='/Users/steve.tuckner/.rvm/gems/ruby-1.9.3-p125@rpp_web_app/bundler/gems/rliapi-e5b2bb579d43/lib'
