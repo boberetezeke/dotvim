@@ -107,7 +107,7 @@ class TestRunner
     @filename = filename
     @line_number = line_number
 
-    puts "filename: #{filename}"
+    puts "filename: '#{@filename}'"
     if line_number
       puts "line_number #{line_number}"
       @line_number_option = ":#{line_number}"
@@ -121,6 +121,8 @@ class TestRunner
       @command = "cucumber"
     when /spec\.rb$/
       @command = "rspec"
+    else
+      @command = "unknown"
     end
 
     @use_zeus = file_found("zeus.json")
@@ -129,7 +131,7 @@ class TestRunner
 
   def run(reuse_window)
     cmd = "#{@zeus_command} #{@command} #{@filename}#{@line_number_option}"
-    puts "running: #{cmd}"
+    puts "running: '#{cmd}'"
 
     if reuse_window then
       VIM::command("setlocal modifiable")
